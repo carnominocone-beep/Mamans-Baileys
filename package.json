@@ -1,6 +1,6 @@
 {
   "name": "@mamans2973/maman",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "WhatsApp API x Button by PL",
   "keywords": [
     "whatsapp",
@@ -42,7 +42,7 @@
     "async-mutex": "^0.5.0",
     "axios": "^1.6.0",
     "crypto-js": "^4.2.0",
-    "libsignal": "https://github.com/WhiskeySockets/libsignal-node/archive/HEAD.tar.gz",
+    "libsignal": "*",
     "lodash": "^4.17.21",
     "music-metadata": "^7.12.3",
     "pino": "^9.6",
@@ -91,5 +91,8 @@
   "packageManager": "yarn@1.22.19",
   "engines": {
     "node": ">=20.0.0"
-  }
+  },
+  "bundleDependencies": [
+    "libsignal"
+  ]
 }
